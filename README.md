@@ -10,7 +10,7 @@ The original source code of the provided example is in [here](https://kentcdodds
 - Typescript (with TSLint setting)
 - Prettier + tslint-config-prettier
 - Test configuration using Jest and [react-testing-library](https://github.com/kentcdodds/react-testing-library)
-- Parcel bundler (1.12+)
+- [Parcel](https://parceljs.org/) bundler (2+)
 
 ## How to set up the project
 
