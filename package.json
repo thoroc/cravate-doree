@@ -17,7 +17,7 @@
     "build": "npm run type-check && parcel build ./src/index.html --public-url '/'",
     "develop": "concurrently -r \"npm:type-check:watch\" \"npm:start\"",
     "test:coverage": "jest --coverage",
-    "test:all": "yarn prettify && yarn test:coverage",
+    "test:all": "yarn test:coverage",
     "test:watch": "jest --watch",
     "type-check": "tsc --noEmit",
     "type-check:watch": "tsc --noEmit --watch",
