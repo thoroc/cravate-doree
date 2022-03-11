@@ -33,6 +33,9 @@ jobs:
           # Using a Personal Access Token here is required to trigger workflows on our new commit.
           # The default GitHub token doesn't trigger any workflows.
           # See: https://github.community/t/push-from-action-does-not-trigger-subsequent-action/16854/2
+          # Create a personal access token with the following scopes:
+          #  - public_repo
+          # Save it as a secret in your repo settings.
           token: ${{ secrets.DEPENDABOT_PAT }}
           ref: ${{ github.event.pull_request.head.ref }}
           fetch-depth: 2
