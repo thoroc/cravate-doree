@@ -11,6 +11,7 @@ The original source code of the provided example is in [here](https://kentcdodds
 - Prettier + tslint-config-prettier
 - Test configuration using Jest and [react-testing-library](https://github.com/kentcdodds/react-testing-library)
 - [Parcel](https://parceljs.org/) bundler (2+)
+- [Husky](https://typicode.github.io/husky/#/) + [lint-staged](https://github.com/okonet/lint-staged)
 
 ## How to set up the project
 
@@ -60,20 +61,12 @@ Test file's name should be `SOURCE.test.ts/tsx/js` or `SOURCE.spec.ts/tsx/js`.
 
 ## Miscellaneous
 
-This Project uses pre-commit hook for `prettier` and testing application.  
-If you don't like it, remove the `husky` package from your repository and erase following scripts.
+This Project uses git hooks handled by `husky`:
 
-    yarn remove husky
+- pre-commit hook for `lint-staged`;
+- pre-push hook for testing application.  
+  If you don't like it, remove the `husky` package from your repository and erase following scripts.
 
-then
+      yarn remove husky lint-staged
 
-```
-// package.json
-// ...
-"husky": {
-  "hooks": {
-    "pre-commit": "npm run prettify && npm run test"
-  }
-},
-// ...
-```
+then delete the directory `.husky`
