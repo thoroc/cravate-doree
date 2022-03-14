@@ -8,5 +8,6 @@
     "incremental": true,
     "experimentalDecorators": true,
     "lib": ["dom", "es2015"]
-  }
+  },
+  "files": ["global.d.ts"]
 }

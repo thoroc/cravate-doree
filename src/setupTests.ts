@@ -1,3 +1,3 @@
-import 'jest-extended'
+import 'jest-extended/all'
 import '@testing-library/react'
-import '@testing-library/jest-dom/extend-expect'
+import '@testing-library/jest-dom'
