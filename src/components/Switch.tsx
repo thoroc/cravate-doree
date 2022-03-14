@@ -1,7 +1,7 @@
 import './switch.styles.css'
 import * as React from 'react'
 
-const noop = () => {}
+const noop = () => null
 
 export interface SwitchProps extends React.HTMLProps<HTMLLabelElement> {
   on: boolean

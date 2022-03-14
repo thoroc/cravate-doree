@@ -7,7 +7,7 @@ type ToggleContextType = {
 }
 const ToggleContext = React.createContext<ToggleContextType>({
   on: false,
-  toggle: () => {},
+  toggle: () => null,
 })
 
 function useEffectAfterMount(
@@ -30,9 +30,9 @@ export const Toggle: React.FunctionComponent<ToggleProps> & {
   On: typeof ToggleOn
   Off: typeof ToggleOff
   Button: typeof ToggleButton
-} = props => {
+} = (props) => {
   const [on, setOn] = React.useState(false)
-  const toggle = React.useCallback(() => setOn(oldOn => !oldOn), [])
+  const toggle = React.useCallback(() => setOn((oldOn) => !oldOn), [])
 
   useEffectAfterMount(() => {
     props.onToggle(on)
