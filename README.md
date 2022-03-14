@@ -1,4 +1,4 @@
-# Typescript + React + Parcel = ❤️
+# Typescript + React + Parcel + Husky = ❤️
 
 This repository has basic settings for buildling react application in Typescript.
 
@@ -6,12 +6,13 @@ The original source code of the provided example is in [here](https://kentcdodds
 
 ## Built in settings
 
-- React + ReactDOM (16.8+)
-- Typescript (with TSLint setting)
-- Prettier + tslint-config-prettier
-- Test configuration using Jest and [react-testing-library](https://github.com/kentcdodds/react-testing-library)
-- [Parcel](https://parceljs.org/) bundler (2+)
-- [Husky](https://typicode.github.io/husky/#/) + [lint-staged](https://github.com/okonet/lint-staged)
+- [Typescript](https://www.typescriptlang.org/)
+- [React](https://reactjs.org/) + [ReactDOM](https://reactjs.org/docs/react-dom.html)
+- ✨: Linting with [eslint](https://eslint.org/)
+- 📝: Formatting with [Prettier](https://prettier.io/)
+- 🧪: Test configuration using [Jest](https://jestjs.io/)
+- 📦: Building with [Parcel](https://parceljs.org/)
+- 🪝: Git hooks management with [Husky](https://typicode.github.io/husky/#/) + [lint-staged](https://github.com/okonet/lint-staged)
 
 ## How to set up the project
 
@@ -53,7 +54,7 @@ The default output directory is `/dist`. You can change the destination wherever
 
 ## How to test the application
 
-    yarn test       # run test once
+    yarn test:all   # run test once
     yarn test:watch # watch mode
 
 You have to create `__tests__` directory at the same location of files which you want to test.
