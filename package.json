@@ -19,6 +19,7 @@
     "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\"",
     "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\" --fix",
     "prebuild": "npm run lint && npm run format",
+    "start": "parcel ./src/index.html --public-url '/'",
     "test:coverage": "jest --coverage",
     "test:all": "yarn test:coverage",
     "test:watch": "jest --watch",
