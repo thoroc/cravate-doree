@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { render, fireEvent, waitForElement } from 'react-testing-library'
+import { render, fireEvent } from '@testing-library/react'
 
 import { App } from '../App'
 
@@ -20,9 +20,9 @@ test('App Component can change toggle status with clicking toggle switch', async
 
   fireEvent.click(toggleButton)
   expect(container).toHaveTextContent(/the button is on/i)
-  expect(toggleButton).toSatisfy(button => button.checked)
+  expect(toggleButton).toSatisfy((button: any) => button.checked)
 
   fireEvent.click(toggleButton)
   expect(container).toHaveTextContent(/the button is off/i)
-  expect(toggleButton).toSatisfy(button => !button.checked)
+  expect(toggleButton).toSatisfy((button: any) => !button.checked)
 })
