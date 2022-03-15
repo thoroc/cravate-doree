@@ -14,11 +14,11 @@
     "Parcel"
   ],
   "scripts": {
-    "build": "npm run type-check && parcel build ./src/index.html --public-url '/'",
+    "build": "yarn type-check && parcel build ./public/index.html --public-url '/'",
     "develop": "concurrently -r \"npm:type-check:watch\" \"npm:start\"",
-    "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\"",
     "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\" --fix",
-    "prebuild": "npm run lint && npm run format",
+    "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\"",
+    "prebuild": "yarn lint && yarn format",
     "start": "parcel ./src/index.html --public-url '/'",
     "test:coverage": "jest --coverage",
     "test:all": "yarn test:coverage",
@@ -92,16 +92,13 @@
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx}": [
-      "eslint --cache --fix",
-      "git add"
+      "eslint --cache --fix"
     ],
     "src/**/*.{css,json,ts,tsx}": [
-      "prettier --write",
-      "git add"
+      "prettier --write"
     ],
     "*.{json,md}": [
-      "prettier --write",
-      "git add"
+      "prettier --write"
     ]
   }
 }
