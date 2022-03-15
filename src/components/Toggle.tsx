@@ -7,7 +7,7 @@ type ToggleContextType = {
 }
 const ToggleContext = React.createContext<ToggleContextType>({
   on: false,
-  toggle: () => {},
+  toggle: () => null,
 })
 
 function useEffectAfterMount(
