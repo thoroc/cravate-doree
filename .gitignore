@@ -4,6 +4,7 @@ dist/
 coverage/
 .parcel-cache/
 .vscode/
+!.vscode/extensions.json
 .idea/
 yarn-error.log
 package-lock.json
