@@ -49,5 +49,11 @@
     ],
     "no-empty-function": "off",
     "@typescript-eslint/no-empty-function": ["error"]
+    "@typescript-eslint/no-unused-vars": "error"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
   }
 }
