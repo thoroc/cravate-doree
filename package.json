@@ -19,7 +19,7 @@
     "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\" --fix",
     "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\"",
     "prebuild": "yarn lint && yarn format",
-    "start": "parcel ./src/index.html --public-url '/'",
+    "start": "parcel ./public/index.html --public-url '/'",
     "test:coverage": "jest --coverage",
     "test:all": "yarn test:coverage",
     "test:watch": "jest --watch",
