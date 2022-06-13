@@ -19,7 +19,7 @@
     "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\" --fix",
     "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\"",
     "prebuild": "yarn lint && yarn format",
-    "start": "parcel ./src/index.html --public-url '/'",
+    "start": "parcel ./public/index.html --public-url '/'",
     "test:coverage": "jest --coverage",
     "test:all": "yarn test:coverage",
     "test:watch": "jest --watch",
@@ -58,6 +58,7 @@
     "parcel": "^2.6.0",
     "pinst": "^3.0.0",
     "prettier": "^2.6.2",
+    "process": "^0.11.10",
     "react-test-renderer": "^17.0.2",
     "ts-jest": "^27.1.4",
     "typescript": "^4.7.3"
