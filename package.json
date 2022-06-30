@@ -14,12 +14,12 @@
     "Parcel"
   ],
   "scripts": {
-    "build": "yarn type-check && parcel build ./public/index.html --public-url '/'",
+    "build": "yarn type-check && parcel build ./public/index.html",
     "develop": "concurrently -r \"npm:type-check:watch\" \"npm:start\"",
     "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\" --fix",
     "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\"",
     "prebuild": "yarn lint && yarn format",
-    "start": "parcel ./public/index.html --public-url '/'",
+    "start": "parcel ./public/index.html",
     "test:coverage": "jest --coverage",
     "test:all": "yarn test:coverage",
     "test:watch": "jest --watch",

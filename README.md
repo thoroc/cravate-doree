@@ -21,8 +21,8 @@ Since I only use Yarn as my primary package manager, this repository will ignore
 If you prefer npm to Yarn, Please modify `.gitignore` file following your flavor.
 
 ```
-git clone git@github.com:adhrinae/ts-react-parcel.git
-cd ts-react-parcel
+git clone git@github.com:thoroc/cravate-doree.git
+cd cravate-doree
 yarn install
 ```
 
