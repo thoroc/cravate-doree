@@ -54,7 +54,7 @@
     "eslint-plugin-testing-library": "^5.5.1",
     "husky": "^8.0.1",
     "jest": "^27.5.1",
-    "jest-extended": "^2.0.0",
+    "jest-extended": "^3.0.0",
     "parcel": "^2.6.2",
     "pinst": "^3.0.0",
     "prettier": "^2.7.1",
