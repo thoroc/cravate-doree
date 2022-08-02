@@ -13,6 +13,10 @@ jobs:
       contents: write
     if: ${{ github.actor == 'dependabot[bot]' }}
     steps:
+<<<<<<< HEAD
       - uses: fastify/github-action-merge-dependabot@v3.2.0
+=======
+      - uses: fastify/github-action-merge-dependabot@v3.0.2
+>>>>>>> 2b0e644 (trying out fastify solution)
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
