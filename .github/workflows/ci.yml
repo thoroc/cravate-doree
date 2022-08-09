@@ -31,4 +31,18 @@ jobs:
         if: steps.verify-changed-files.outputs.files_changed == 'true'
         run: |
           yarn install
+
+      - name: Run linter
+        if: steps.verify-changed-files.outputs.files_changed == 'true'
+        run: |
+          yarn lint
+
+      - name: Run formatter
+        if: steps.verify-changed-files.outputs.files_changed == 'true'
+        run: |
+          yarn format
+
+      - name: Run tests
+        if: steps.verify-changed-files.outputs.files_changed == 'true'
+        run: |
           yarn test:all
