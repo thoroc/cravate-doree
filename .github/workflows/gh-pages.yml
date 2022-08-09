@@ -5,6 +5,8 @@ on:
     branches:
       - master # Set a branch name to trigger deployment
   pull_request:
+    types:
+      - closed
 
 jobs:
   deploy:
@@ -34,26 +36,14 @@ jobs:
           cache: "yarn"
 
       - name: Install dependencies
-        if: steps.verify-changed-files.outputs.files_changed == 'true'
         run: |
           yarn install
 
-      - name: Run linter
-        if: steps.verify-changed-files.outputs.files_changed == 'true'
-        run: |
-          yarn lint
-
-      - name: Run formatter
-        if: steps.verify-changed-files.outputs.files_changed == 'true'
-        run: |
-          yarn format
-
-      - name: Build
-        if: steps.verify-changed-files.outputs.files_changed == 'true'
+      - name: Build App
         run: |
           yarn build
 
-      - name: Deploy
+      - name: Deploy App
         uses: peaceiris/actions-gh-pages@v3
         if: ${{ github.ref == 'refs/heads/master' }}
         with:
