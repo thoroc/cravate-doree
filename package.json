@@ -15,14 +15,14 @@
     "Parcel"
   ],
   "scripts": {
-    "build": "yarn type-check && parcel build ./public/index.html",
+    "build": "yarn type-check && vite build",
     "deploy": "gh-pages -d build",
-    "develop": "concurrently -r \"npm:type-check:watch\" \"npm:start\"",
-    "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\" --fix",
+    "dev": "vite",
     "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\"",
+    "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\" --fix",
     "prebuild": "yarn lint && yarn format",
     "predeploy": "yarn build",
-    "start": "parcel ./public/index.html",
+    "serve": "vite preview",
     "test:coverage": "jest --coverage",
     "test:all": "yarn test:coverage",
     "test:watch": "jest --watch",
@@ -34,7 +34,8 @@
   },
   "dependencies": {
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "vite": "^3.1.8"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.16.5",
@@ -45,7 +46,7 @@
     "@types/react-dom": "^17.0.13",
     "@typescript-eslint/eslint-plugin": "^5.40.1",
     "@typescript-eslint/parser": "^5.40.1",
-    "concurrently": "^7.4.0",
+    "@vitejs/plugin-react": "^2.1.0",
     "eslint": "^8.25.0",
     "eslint-config-airbnb-typescript": "^17.0.0",
     "eslint-config-prettier": "^8.5.0",
@@ -59,13 +60,13 @@
     "husky": "^8.0.1",
     "jest": "^27.5.1",
     "jest-extended": "^3.1.0",
-    "parcel": "^2.7.0",
     "pinst": "^3.0.0",
     "prettier": "^2.7.1",
     "process": "^0.11.10",
     "react-test-renderer": "^17.0.2",
     "ts-jest": "^27.1.4",
-    "typescript": "^4.8.4"
+    "typescript": "^4.8.4",
+    "vite-plugin-eslint": "^1.8.1"
   },
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "engines": {
