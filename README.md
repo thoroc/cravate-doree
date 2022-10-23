@@ -11,7 +11,7 @@ The original source code of the provided example is in [here](https://kentcdodds
 - ✨: Linting with [eslint](https://eslint.org/)
 - 📝: Formatting with [Prettier](https://prettier.io/)
 - 🧪: Test configuration using [Jest](https://jestjs.io/)
-- 📦: Building with [Parcel](https://parceljs.org/)
+- 📦: Building with [Vite](https://vitejs.dev/)
 - 🪝: Git hooks management with [Husky](https://typicode.github.io/husky/#/) + [lint-staged](https://github.com/okonet/lint-staged)
 
 ## How to set up the project
