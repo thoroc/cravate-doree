@@ -29,7 +29,7 @@ yarn install
 ## How to start development for the application
 
     # With type checking
-    yarn develop
+    yarn dev
 
     # Transpile only
     yarn start
