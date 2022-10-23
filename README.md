@@ -20,36 +20,39 @@ The original source code of the provided example is in [here](https://kentcdodds
 Since I only use Yarn as my primary package manager, this repository will ignore `package-lock.json` file on commit.  
 If you prefer npm to Yarn, Please modify `.gitignore` file following your flavor.
 
-```
-git clone git@github.com:thoroc/cravate-doree.git
-cd cravate-doree
-yarn install
+```sh
+    git clone git@github.com:thoroc/cravate-doree.git
+    cd cravate-doree
+    yarn install
 ```
 
 ## How to start development for the application
 
-    # With type checking
+```sh
     yarn dev
-
-    # Transpile only
-    yarn start
+```
 
 Execute the command and you can run & test the application on `localhost:1234` in the browser.
 
 ## How to build the application
 
+```sh
     yarn build
+```
 
 The default output directory is `/dist`. You can change the destination wherever you want.
 
-```
-// package.json
-// ...
-"scripts": {
-  // ...
-  "build": "... parcel build ./src/index.html -d YOUR_OUTPUT_DIR --public-url '/'" <- Change here
-}
-// ...
+```javascript
+// vite.config.ts
+...
+
+export default defineConfig({
+  ...
+  build: {
+    outDir: 'dist',
+  },
+  ...
+})
 ```
 
 ## How to test the application
