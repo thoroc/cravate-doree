@@ -19,8 +19,8 @@
     "build": "wireit",
     "deploy": "wireit",
     "dev": "wireit",
-    "format": "wireit",
-    "lint": "wireit",
+    "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\"",
+    "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\" --fix",
     "prebuild": "wireit",
     "predeploy": "wireit",
     "serve": "wireit",
@@ -44,18 +44,6 @@
     },
     "dev": {
       "command": "vite"
-    },
-    "format": {
-      "command": "prettier --write",
-      "files": [
-        "\"src/**/*.{js,jsx,ts,tsx}\""
-      ]
-    },
-    "lint": {
-      "command": "eslint",
-      "files": [
-        "\"src/**/*.{js,jsx,ts,tsx}\" --fix"
-      ]
     },
     "prebuild": {
       "dependencies": [
