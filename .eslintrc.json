@@ -42,7 +42,7 @@
     ],
     "react/prop-types": 0,
     "indent": ["error", 2],
-    "linebreak-style": 1,
+    "linebreak-style": 0,
     "no-unused-vars": "off",
     "@typescript-eslint/ban-types": [
       "error",
@@ -60,7 +60,8 @@
       "error",
       {
         "singleQuote": false,
-        "semi": true
+        "semi": true,
+        "endOfLine": "auto"
       }
     ]
   },
