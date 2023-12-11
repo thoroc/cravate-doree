@@ -6,3 +6,4 @@ yarn-error.log
 tsconfig.tsbuildinfo
 .eslintcache
 .vscode/settings.json
+.wireit
