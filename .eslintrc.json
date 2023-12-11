@@ -25,6 +25,13 @@
   },
   "plugins": ["react", "import", "@typescript-eslint", "jest"],
   "rules": {
+    "quotes": [
+      "error",
+      "double",
+      {
+        "avoidEscape": true
+      }
+    ],
     "react/jsx-uses-react": "error",
     "react/jsx-uses-vars": "error",
     "@typescript-eslint/array-type": [
@@ -48,7 +55,14 @@
     ],
     "@typescript-eslint/no-empty-function": ["error"],
     "@typescript-eslint/no-unused-vars": ["error"],
-    "no-empty-function": "off"
+    "no-empty-function": "off",
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": false,
+        "semi": true
+      }
+    ]
   },
   "settings": {
     "react": {
