@@ -16,22 +16,87 @@
   ],
   "type": "module",
   "scripts": {
-    "build": "yarn type-check && vite build",
-    "deploy": "gh-pages -d build",
-    "dev": "vite",
-    "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\"",
-    "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\" --fix",
-    "prebuild": "yarn lint && yarn format",
-    "predeploy": "yarn build",
-    "serve": "vite preview",
-    "test:coverage": "jest --coverage",
-    "test:all": "yarn test:coverage",
-    "test:watch": "jest --watch",
-    "type-check": "tsc --noEmit",
-    "type-check:watch": "tsc --noEmit --watch",
-    "postinstall": "husky install",
-    "prepack": "pinst --disable",
-    "postpack": "pinst --enable"
+    "build": "wireit",
+    "deploy": "wireit",
+    "dev": "wireit",
+    "format": "wireit",
+    "lint": "wireit",
+    "prebuild": "wireit",
+    "predeploy": "wireit",
+    "serve": "wireit",
+    "test:coverage": "wireit",
+    "test:all": "wireit",
+    "test:watch": "wireit",
+    "type-check": "wireit",
+    "postinstall": "wireit",
+    "prepack": "wireit",
+    "postpack": "wireit"
+  },
+  "wireit": {
+    "build": {
+      "dependencies": [
+        "type-check"
+      ],
+      "command": "vite build"
+    },
+    "deploy": {
+      "command": "gh-pages -d build"
+    },
+    "dev": {
+      "command": "vite"
+    },
+    "format": {
+      "command": "prettier --write",
+      "files": [
+        "\"src/**/*.{js,jsx,ts,tsx}\""
+      ]
+    },
+    "lint": {
+      "command": "eslint",
+      "files": [
+        "\"src/**/*.{js,jsx,ts,tsx}\" --fix"
+      ]
+    },
+    "prebuild": {
+      "dependencies": [
+        "lint",
+        "format"
+      ]
+    },
+    "predeploy": {
+      "dependencies": [
+        "build"
+      ]
+    },
+    "serve": {
+      "command": "vite preview"
+    },
+    "test:coverage": {
+      "command": "jest --coverage"
+    },
+    "test:all": {
+      "dependencies": [
+        "test:coverage"
+      ]
+    },
+    "test:watch": {
+      "command": "jest --watch"
+    },
+    "type-check": {
+      "command": "tsc --noEmit"
+    },
+    "type-check:watch": {
+      "command": "tsc --noEmit --watch"
+    },
+    "postinstall": {
+      "command": "husky install"
+    },
+    "prepack": {
+      "command": "pinst --disable"
+    },
+    "postpack": {
+      "command": "pinst --enable"
+    }
   },
   "dependencies": {
     "react": "^17.0.2",
@@ -67,6 +132,7 @@
     "process": "^0.11.10",
     "react-test-renderer": "^17.0.2",
     "ts-jest": "^27.1.4",
+    "tsx": "^4.6.2",
     "typescript": "^4.9.5",
     "vite-plugin-eslint": "^1.8.1",
     "wireit": "^0.14.1"
