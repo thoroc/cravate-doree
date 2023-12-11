@@ -24,6 +24,7 @@ function useEffectAfterMount(
 }
 
 interface ToggleProps {
+  children: React.ReactNode;
   onToggle: (on: boolean) => void;
 }
 export const Toggle: React.FunctionComponent<ToggleProps> & {
@@ -74,7 +75,7 @@ function ToggleOff({
 }
 
 type Omit<T, U extends keyof T> = Pick<T, Exclude<keyof T, U>>;
-function ToggleButton(props: Omit<SwitchProps, "on" | "onClick">) {
+function ToggleButton(props: Readonly<Omit<SwitchProps, "on" | "onClick">>) {
   const { on, toggle } = useToggleContext();
   return <Switch on={on} onClick={toggle} {...props} />;
 }

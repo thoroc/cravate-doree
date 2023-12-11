@@ -61,7 +61,8 @@
       {
         "singleQuote": false,
         "semi": true,
-        "endOfLine": "auto"
+        "endOfLine": "auto",
+        "trailingComma": "all"
       }
     ]
   },
