@@ -3990,10 +3990,10 @@ kleur@^3.0.3:
   resolved "https://registry.yarnpkg.com/kleur/-/kleur-3.0.3.tgz#a79c9ecc86ee1ce3fa6206d1216c501f147fc07e"
   integrity sha512-eTIzlVOSUR+JxdDFepEYcBMtZ9Qqdef+rnzWdRZuMbOywu5tO2w2N7rqjoANZ5k9vywhL6Br1VRjUIgTQx4E8w==
 
-konva@^9.3.8:
-  version "9.3.8"
-  resolved "https://registry.yarnpkg.com/konva/-/konva-9.3.8.tgz#2937ca5ceeabcc265eec1db5ffbfaf9a8487b83e"
-  integrity sha512-acfS9hSBI0186DVjP4hnCgVQUGg5USn2I9U18skbOG+wFaVB2d84CmUNBfBAPTqsYjO5A0+qHZh7nj20UMNUEA==
+konva@^9.3.9:
+  version "9.3.9"
+  resolved "https://registry.yarnpkg.com/konva/-/konva-9.3.9.tgz#cf4217b9a1bb98c997726b4566f5c96e7651b3f7"
+  integrity sha512-0ACsA2kCGilptQqosTVdu5g1jAeONZI/W/L5U7afeRhoWqSV+HjcuBB+vsFzs64oL/02y+4/jd3K5RL0sLCxbQ==
 
 leven@^3.1.0:
   version "3.1.0"
