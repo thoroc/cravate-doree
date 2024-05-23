@@ -4079,9 +4079,9 @@ kleur@^3.0.3:
   integrity sha512-eTIzlVOSUR+JxdDFepEYcBMtZ9Qqdef+rnzWdRZuMbOywu5tO2w2N7rqjoANZ5k9vywhL6Br1VRjUIgTQx4E8w==
 
 konva@^9.3.9:
-  version "9.3.9"
-  resolved "https://registry.yarnpkg.com/konva/-/konva-9.3.9.tgz#cf4217b9a1bb98c997726b4566f5c96e7651b3f7"
-  integrity sha512-0ACsA2kCGilptQqosTVdu5g1jAeONZI/W/L5U7afeRhoWqSV+HjcuBB+vsFzs64oL/02y+4/jd3K5RL0sLCxbQ==
+  version "9.3.11"
+  resolved "https://registry.yarnpkg.com/konva/-/konva-9.3.11.tgz#742263389b4ad16fc2c202f1d6317ae85b837f04"
+  integrity sha512-ZkFF4CXKZCDd2+6sBPA0y3hQ+X4uTqIS6JxTl3BEOFJzKr1tId+rxxJgtsk1FQIH3auuvnMj/rkbatUcf9C2Wg==
 
 leven@^3.1.0:
   version "3.1.0"
