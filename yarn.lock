@@ -5157,10 +5157,10 @@ react-is@^17.0.1:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-17.0.2.tgz#e691d4a8e9c789365655539ab372762b0efb54f0"
   integrity sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w==
 
-react-konva@^19.0.0:
-  version "19.0.0"
-  resolved "https://registry.yarnpkg.com/react-konva/-/react-konva-19.0.0.tgz#9d2b3b252694388a61edc8265800fdef3321e6ec"
-  integrity sha512-jJNlcdSubm30iTVZ0ot4yFhe45G8V4Kb7Ov2ioxoLR7ZlIB/QIpGYU9jJThgEYdvATYrOXGri55qNXnPNQWJ4A==
+react-konva@^19.0.2:
+  version "19.0.2"
+  resolved "https://registry.yarnpkg.com/react-konva/-/react-konva-19.0.2.tgz#7fbc626280bdf617a76a82116674bd3677cb0c46"
+  integrity sha512-JNCfMO2V7Wm4fh+YwvMkuo3G7/2yq0/JhLbqG2yyuw+vHOn1qj9jm0+Jxq7R83x0M6mi45uK0GKn4lDWMhHReQ==
   dependencies:
     "@types/react-reconciler" "^0.28.8"
     its-fine "^1.2.5"
