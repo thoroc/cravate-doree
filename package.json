@@ -126,7 +126,7 @@
     "tsx": "^4.19.2",
     "typescript": "^5.7.3",
     "vite-plugin-eslint": "^1.8.1",
-    "wireit": "^0.14.9"
+    "wireit": "^0.14.10"
   },
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "engines": {
